@@ -78,18 +78,76 @@
         //border: 1px solid red;
         
         &--form { // [ add month ]
-            visibility: hidden;
+            display: none;
             opacity: 0;
 
+            padding-bottom: 1rem;
+                   
             &.active {
-                visibility: visible;
+                display: block;
                 opacity: 1;
 
             }
+
+            .form__monthadd { // [ add new month form ]
+                padding: 1rem;
+                f-training-submit
+                &--other {
+                    padding-bottom: 1rem;
+                }
+
+                &--training {
+                    padding-top: 1rem;
+
+                    .f-training-submit {
+                        grid-column: span 2;
+                    }
+
+                    &--list{
+
+                        padding-top: 1rem;
+                        &--item {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr auto;
+                            padding: 0.5rem 0;
+                        }
+
+                        .f-training-delete {
+                            cursor: pointer;
+                            border: none;
+                            background: none;
+                            color: $orange;   
+                        }
+                    }
+                }
+
+                .form-button {
+                    padding: 0.5rem 1rem;
+                    font-size: $font-md;
+                    cursor: pointer;
+                    border: none;
+                    background: none;
+                    color: $orange;     
+                }
+
+                &--buttons {
+
+                    &--submit {
+
+                    }
+    
+                    &--clear {
+    
+                    }
+                }
+            }
         }
+
         &--stats { // [ month details ]
-            visibility: hidden;
+            display: none;
             opacity: 0;
+
+            padding-bottom: 1rem;
 
             transition: all 0.3s ease-in-out;
             &--type {
@@ -100,7 +158,7 @@
             }
 
             &.active {
-                visibility: visible;
+                display: block;
                 opacity: 1;
 
             }
@@ -139,7 +197,7 @@
     top: 120px;
     left: 1rem;
     right: 1rem;
-    bottom: 0;
+    //bottom: 0;
     display: flex;
     flex-direction: column;
 
@@ -234,6 +292,24 @@
             height: auto;
         }
     }
+
+    .form__monthadd { // [ ADDING MONTH FORM ]
+            display: grid;
+            grid-template-columns: 1fr;
+
+            &--other {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &--training {
+
+                &--opt {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
 }
 
 

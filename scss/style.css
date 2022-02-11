@@ -389,18 +389,65 @@
 }
 
 .app__container .app__monthly--form {
-  visibility: hidden;
+  display: none;
   opacity: 0;
+  padding-bottom: 1rem;
 }
 
 .app__container .app__monthly--form.active {
-  visibility: visible;
+  display: block;
   opacity: 1;
 }
 
+.app__container .app__monthly--form .form__monthadd {
+  padding: 1rem;
+}
+
+f-training-submit
+.app__container .app__monthly--form .form__monthadd--other {
+  padding-bottom: 1rem;
+}
+
+.app__container .app__monthly--form .form__monthadd--training {
+  padding-top: 1rem;
+}
+
+.app__container .app__monthly--form .form__monthadd--training .f-training-submit {
+  grid-column: span 2;
+}
+
+.app__container .app__monthly--form .form__monthadd--training--list {
+  padding-top: 1rem;
+}
+
+.app__container .app__monthly--form .form__monthadd--training--list--item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr auto;
+      grid-template-columns: 1fr 1fr 1fr auto;
+  padding: 0.5rem 0;
+}
+
+.app__container .app__monthly--form .form__monthadd--training--list .f-training-delete {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #ce5233;
+}
+
+.app__container .app__monthly--form .form__monthadd .form-button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #ce5233;
+}
+
 .app__container .app__monthly--stats {
-  visibility: hidden;
+  display: none;
   opacity: 0;
+  padding-bottom: 1rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -419,7 +466,7 @@
 }
 
 .app__container .app__monthly--stats.active {
-  visibility: visible;
+  display: block;
   opacity: 1;
 }
 
@@ -451,7 +498,6 @@
   top: 120px;
   left: 1rem;
   right: 1rem;
-  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,6 +629,27 @@
     padding: 1rem;
     margin: 0.5rem 2rem;
     height: auto;
+  }
+  .form__monthadd {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .form__monthadd--other {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__monthadd--training--opt {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 

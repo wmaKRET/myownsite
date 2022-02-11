@@ -75,13 +75,13 @@
                         <p>__ TRENINGÓW</p>
                         <p>ŁĄCZNIE __ <span class="detailed--cardN">(MIN)</span></p>
                         <p>ŚREDNIO __ <span class="detailed--cardN">(MIN)</span></p>
-                    </div> 
+                    </div>
                     <div class="summary__detailed--card summary__detailed--cardB">
                         <p class="summary--title gradient-background">ROWEROWE</p>
                         <p>__ TRENINGÓW</p>
                         <p>ŁĄCZNIE __ <span class="detailed--cardN">(KM)</span></p>
                         <p>ŚREDNIO __ <span class="detailed--cardN">(KM)</span></p>
-                    </div> 
+                    </div>
                     <div class="summary__detailed--card summary__detailed--cardO">
                         <p class="summary--title gradient-background">INNE</p>
                         <p>__ TRENINGÓW</p>
@@ -101,7 +101,61 @@
                     <span class="app__monthly--exit--line gradient-background-r"></span>
                 </a>
                 <div class="app__monthly--form">
-                    <p>tu kej formularz</p>
+                    <!-- adding month form -->
+                    <form class="form__monthadd">
+                        <div class="form__monthadd--other">
+                            <label for="f-month">Miesiąc:</label>
+                            <select name="month" id="f-month">
+                                <option value="">-- ZACZNIJ OD WYBORU MIESIĄCA! --</option>
+                                <option value="0">Styczeń</option>
+                                <option value="1">Luty</option>
+                                <option value="2">Marzec</option>
+                                <option value="3">Kwiecień</option>
+                                <option value="4">Maj</option>
+                                <option value="5">Czerwiec</option>
+                                <option value="6">Lipiec</option>
+                                <option value="7">Sierpień</option>
+                                <option value="8">Wrzesień</option>
+                                <option value="9">Październik</option>
+                                <option value="10">Listopad</option>
+                                <option value="11">Grudzień</option>
+                            </select>
+                            <label for="f-weight">Waga<span class="detailed--cardN">(KG)</span>:</label>
+                            <input name="weight" type="number" id="f-weight" placeholder="np. 70">
+                            <label for="f-figure">Ocena sylwetki:</label>
+                            <input name="figure" type="number" id="f-figure" min="1" max="100" placeholder="Od 1 do 100">
+                        </div>
+                        <div class="form__monthadd--training">
+                            <label for="f-training">Dodaj trening:</label>
+                            <div class="form__monthadd--training--opt">
+                                <label for="f-training-type">Rodzaj treningu:</label>
+                                <select name="training type" id="f-training-type" disabled>
+                                    <option value="">-- Rodzaj -- </option>
+                                    <option value="0">Biegowy</option>
+                                    <option value="1">Ćwieczenia</option>
+                                    <option value="2">Rowerowy</option>
+                                    <option value="3">Inny</option>
+                                </select>
+                                <label for="f-training-dist">Dystans<span class="detailed--cardN">(KM)</span>:</label>
+                                <input name="distance" type="number" id="f-training-dist" min="0" placeholder="np. 0 dla ĆW" disabled>
+                                <label for="f-training-time">Czas<span class="detailed--cardN">(MIN)</span>:</label>
+                                <input name="time" type="number" id="f-training-time" min="1" placeholder="np. 60" disabled>
+                                <button type="button" class="f-training-submit form-button">Dodaj</button>
+                            </div>
+                            <div class="form__monthadd--training--list">
+                                <!-- <div class="form__monthadd--training--list--item">
+                                    <p>Biegowy</p>
+                                    <p>10 km</p>
+                                    <p>60 min</p>
+                                    <button type="button" class="f-training-delete">X</button>
+                                </div> -->
+                            </div>
+                            <div class="form__monthadd--buttons">
+                                <button type="button" class="form__monthadd--submit form-button">Zapisz</button>
+                                <button type="button" class="form__monthadd--clear form-button">Wyczyść</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="app__monthly--stats">
                     <p class="summary--titleMY gradient-background-r">STYCZEŃ</p>
@@ -145,16 +199,11 @@
                 <a href="#home" class="month__card--add">
                     <h2 class="month__header">Dodaj miesiąc</h2>
                 </a>
-                <a href="#home" class="month__card gradient-border">
+                <!-- <a href="#home" class="month__card gradient-border">
                     <h2 class="month__header month__headerM">Styczeń</h2>
                     <p>__ TRENINGÓW</p>
                     <p>ŁĄCZNIE __ <span class="detailed--cardN">(KM)</span></p>
-                </a>
-                <a href="#home" class="month__card gradient-border">
-                    <h2 class="month__header month__headerM">Grudzień</h2>
-                    <p>__ TRENINGÓW</p>
-                    <p>ŁĄCZNIE __ <span class="detailed--cardN">(KM)</span></p>
-                </a>
+                </a> -->
             </div>
         </div>
         <div>
