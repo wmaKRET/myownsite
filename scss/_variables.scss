@@ -1,0 +1,56 @@
+//$black: #141414;
+
+
+$white: #ffffff;
+$grey: rgb(213, 235, 243);
+$darkgrey: rgb(48, 48, 53);
+$black: #141414;
+$navbar: $darkgrey;
+//$black: $darkgrey;
+$orange: rgb(206, 82, 51);
+//$navbar: gray;
+
+$font-ss: 0.6rem;
+$font-sm: 1rem;
+$font-md: 1.5rem;
+$font-lg: 2rem;
+
+.gradient-background {
+    background-color: $grey;
+    background-image: linear-gradient(to right,  $grey 30%, $orange 70%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.gradient-background-r {
+    background-color: $grey;
+    background-image: linear-gradient(to left,  $darkgrey, $orange 80%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.gradient-background-l {
+    background-color: $grey;
+    background-image: linear-gradient(to right,  $darkgrey 0%, $grey 50%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.gradient-border {
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom,  $darkgrey, $orange, $darkgrey) 1 100%;
+    border-radius: 5px;
+}

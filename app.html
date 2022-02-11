@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>żurnal</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo gradient-background-l">
+                <a href="#home" class="myID">wmaKRET</a>
+            </div>
+            <div class="navbar__menu">
+                <a href="./index.html#home" id="home-page" class="navbar__item">żurnal?</a>
+                <a href="./index.html#about" id="about-page" class="navbar__item">o mnie</a>
+                <a href="./index.html#contact" id="contact-page" class="navbar__item">kontakt</a>
+                <a href="#home" class="navbar__item highlight app-style">żurnal</a>
+            </div>
+            <div class="navbar__hbg">
+                <span class="hbg-line gradient-background-r"></span>
+                <span class="hbg-line gradient-background-r"></span>
+                <span class="hbg-line gradient-background-r"></span>
+            </div>
+        </div>
+        <div class="navbar__mobile--container">
+            <a href="./index.html#home" class="navbar__mobile--item">żurnal?</a>
+            <a href="./index.html#about" class="navbar__mobile--item">o mnie</a>
+            <a href="./index.html#contact" class="navbar__mobile--item">kontakt</a>
+            <a href="#home" class="navbar__mobile--item app-style gradient-background">żurnal</a>
+        </div>
+        <!-- space behind pop-up menu -->
+        <div class="navbar__escape--mobile"></div>
+        <!-- space behind pop-up menu -->
+        <div class="navbar__logo--popup">
+            <!-- tu kej linkeding + github -->
+            <a href="" class="navbar__logo--item">Linkedin</a>
+            <a href="" class="navbar__logo--item">GitHub</a>
+            <!-- tu kej linkeding + github -->
+        </div>
+    </nav>
+    <main class="app__container">
+        <div class="app__summary" id="home">
+            <h1 class="app__summary--heading gradient-background">PODSUMOWANIE</h1>
+            <div class="app__summary--items">
+                <div class="summary__personal">
+                    <!-- user list here -->
+                    <p class="summary--title gradient-background-r" id="personal-name">x (z dnia: )</p>
+                    <!-- user list here -->
+                    <p class="summary--minititle">WAGA: </p>
+                    <p id="personal-weight">__</p>
+                    <p class="summary--minititle">Ocena sylwetki: </p>
+                    <p id="personal-score">__</p>
+                </div>
+                <div class="summary__general">
+                    <p class="summary--title gradient-background-r" id="general-date"></p>
+                    <p class="summary--minititle">DNI OD 1-GO: </p>
+                    <p id="general-howmanydays">38</p>
+                    <p class="summary--minititle">TRENINGI: </p>
+                    <p id="general-howmanytraining">__</p>
+                </div>
+                <div class="summary__detailed">
+                    <div class="summary__detailed--card">
+                        <p class="summary--title gradient-background">BIEGOWE</p>
+                        <p>__ TRENINGÓW</p>
+                        <p>ŁĄCZNIE __ <span class="detailed--cardN">(KM)</span></p>
+                        <p>ŚREDNIO __ <span class="detailed--cardN">(KM)</span></p>
+                    </div>
+                    <div class="summary__detailed--card summary__detailed--cardW">
+                        <p class="summary--title gradient-background">ĆW</p>
+                        <p>__ TRENINGÓW</p>
+                        <p>ŁĄCZNIE __ <span class="detailed--cardN">(MIN)</span></p>
+                        <p>ŚREDNIO __ <span class="detailed--cardN">(MIN)</span></p>
+                    </div> 
+                    <div class="summary__detailed--card summary__detailed--cardB">
+                        <p class="summary--title gradient-background">ROWEROWE</p>
+                        <p>__ TRENINGÓW</p>
+                        <p>ŁĄCZNIE __ <span class="detailed--cardN">(KM)</span></p>
+                        <p>ŚREDNIO __ <span class="detailed--cardN">(KM)</span></p>
+                    </div> 
+                    <div class="summary__detailed--card summary__detailed--cardO">
+                        <p class="summary--title gradient-background">INNE</p>
+                        <p>__ TRENINGÓW</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app__monthly" id="details">
+            <h1 class="app__monthly--heading gradient-background">SZCZEGÓŁY</h1>
+            <!-- space behind pop-up menu -->
+            <a href="#details" class="app__monthly--escape--popup"></a>
+            <!-- space behind pop-up menu -->
+            <div class="app__monthly--popup gradient-border">
+                <a href="#details" class="app__monthly--exit">
+                    <span class="app__monthly--exit--line gradient-background-r"></span>
+                    <span class="app__monthly--exit--line gradient-background-r"></span>
+                    <span class="app__monthly--exit--line gradient-background-r"></span>
+                </a>
+                <div class="app__monthly--form">
+                    <p>tu kej formularz</p>
+                </div>
+                <div class="app__monthly--stats">
+                    <p class="summary--titleMY gradient-background-r">STYCZEŃ</p>
+                    <div class="app__monthly--stats--details">
+                        <p>WAGA: </p>
+                        <p>__</p>
+                        <p>Ocena sylwetki: </p>
+                        <p>__</p>
+                        <p>TRENINGI: </p>
+                        <p>__</p>
+                        <div class="app__monthly--stats--details--card">
+                            <p class="summary--titleM">BIEGOWE</p>
+                            <p>__ TRENINGÓW</p>
+                            <p>ŁĄCZNIE __ <span class="detailed--cardN">(KM)</span></p>
+                            <p>ŚREDNIO __ <span class="detailed--cardN">(KM)</span></p>
+                            <ul>
+                                <li>11 km - 60 min </li>
+                                <li>12 km - 45 min</li>
+                            </ul>
+                        </div>
+                        <!-- <div class="app__monthly--stats--details--card">
+                            <p class="summary--titleM">ROWEROWE</p>
+                            <p>__ TRENINGÓW</p>
+                            <p>ŁĄCZNIE __ <span class="detailed--cardN">(KM)</span></p>
+                            <p>ŚREDNIO __ <span class="detailed--cardN">(KM)</span></p>
+                        </div>
+                        <div class="app__monthly--stats--details--card">
+                            <p class="summary--titleM">ĆW</p>
+                            <p>__ TRENINGÓW</p>
+                            <p>ŁĄCZNIE __ <span class="detailed--cardN">(MIN)</span></p>
+                            <p>ŚREDNIO __ <span class="detailed--cardN">(MIN)</span></p>
+                        </div>
+                        <div class="app__monthly--stats--details">
+                            <p class="summary--titleM">INNE</p>
+                            <p>__ TRENINGÓW</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="app__monthly--items">
+                <a href="#home" class="month__card--add">
+                    <h2 class="month__header">Dodaj miesiąc</h2>
+                </a>
+                <a href="#home" class="month__card gradient-border">
+                    <h2 class="month__header month__headerM">Styczeń</h2>
+                    <p>__ TRENINGÓW</p>
+                    <p>ŁĄCZNIE __ <span class="detailed--cardN">(KM)</span></p>
+                </a>
+                <a href="#home" class="month__card gradient-border">
+                    <h2 class="month__header month__headerM">Grudzień</h2>
+                    <p>__ TRENINGÓW</p>
+                    <p>ŁĄCZNIE __ <span class="detailed--cardN">(KM)</span></p>
+                </a>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__items gradient-background-r">Wojciu</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

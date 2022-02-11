@@ -1,0 +1,28 @@
+.main__container {  
+    text-align: center;
+
+    .hero {
+        height: 90vh;
+    
+        &__heading {
+            padding-top: 60px;
+        }
+    }
+    
+    .about {
+        height: 90vh;
+    
+        &__heading {
+            padding-top: 60px;
+        }
+    }
+    
+    .contact {
+        height: 90vh;
+    
+        &__heading {
+            padding-top: 60px;
+        }
+    }
+}
+
