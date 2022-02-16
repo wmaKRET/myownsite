@@ -16,7 +16,7 @@ function exitHamburger(button, menu, menuExit) {
     menuExit.classList.remove('active');
 }
 
-hamburgerButton.addEventListener('click', function () {
+hamburgerButton.addEventListener('click', () => {
     if (logoMenu.classList.contains('active')) {
         exitHamburger(hamburgerButton, logoMenu, mobileMenuExit);
     } else {
@@ -24,11 +24,11 @@ hamburgerButton.addEventListener('click', function () {
     }
 });
 
-mobileMenu.addEventListener('click', function(){
+mobileMenu.addEventListener('click', () => {
     toggleHamburger(hamburgerButton, mobileMenu, mobileMenuExit);
 });
 
-logoButton.addEventListener('click', function(){
+logoButton.addEventListener('click', () => {
     if (mobileMenu.classList.contains('active')) {
         exitHamburger(hamburgerButton, mobileMenu, mobileMenuExit);
         toggleHamburger(hamburgerButton, logoMenu, mobileMenuExit);
@@ -37,11 +37,11 @@ logoButton.addEventListener('click', function(){
     }
 });
 
-logoMenu.addEventListener('click', function(){
+logoMenu.addEventListener('click', () => {
     toggleHamburger(hamburgerButton, logoMenu, mobileMenuExit);
 });
 
-mobileMenuExit.addEventListener('click', function() {
+mobileMenuExit.addEventListener('click', () => {
     exitHamburger(hamburgerButton, mobileMenu, mobileMenuExit);
     exitHamburger(hamburgerButton, logoMenu, mobileMenuExit);
 });

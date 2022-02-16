@@ -51,6 +51,7 @@ function addMonth(e){
     addMonthToLocalStorage(month, weight, figure, trainings);
     formDefault();
     clearLocalStorage('training');
+    clearTrainings();
     showTrainings();
 }
 
@@ -126,13 +127,13 @@ function formDefault(){
 }
 
 // BOTTOM SECTION FUNCTIONS
-function openMonth(background, inside, outside) {
+const openMonth = (background, inside, outside) => {
     background.classList.add('active');
     inside.classList.add('active');
     outside.classList.add('active');
 }
 
-function closeMonth(background, inside, outside) {
+const closeMonth = (background, inside, outside) => {
     background.classList.remove('active');
     inside.classList.remove('active');
     outside.classList.remove('active');
@@ -156,15 +157,15 @@ formSubmit.addEventListener('click', addMonth);
 formClear.addEventListener('click', formDefault);
 
 // BOTTOM SECTION LISTENERS
-monthAddBtn.addEventListener('click', function () {
+monthAddBtn.addEventListener('click', () => {
     openMonth(monthPopup, insideForm, monthExit);
 });
 
-monthBtn.forEach(e => e.addEventListener('click', function () {
+monthBtn.forEach(e => e.addEventListener('click', () => {
     openMonth(monthPopup, insideStats, monthExit);
 }));
 
-monthExitBtn.addEventListener('click', function () {
+monthExitBtn.addEventListener('click', () => {
     if (insideForm.classList.contains('active')) {
         closeMonth(monthPopup, insideForm, monthExit);
         formDefault();
@@ -173,7 +174,7 @@ monthExitBtn.addEventListener('click', function () {
     }
 });
 
-monthExit.addEventListener('click', function () {
+monthExit.addEventListener('click', () => {
     if (insideForm.classList.contains('active')) {
         closeMonth(monthPopup, insideForm, monthExit);
         formDefault();
@@ -217,6 +218,12 @@ function removeFromLocalStorage(id) {
 
 function clearLocalStorage(key) {
     localStorage.removeItem(key);
+}
+
+function clearTrainings(){
+    monthList.innerHTML = `<a href="#home" class="month__card--add">
+        <h2 class="month__header">Dodaj miesiąc</h2>
+        </a>`
 }
 
 function showTrainings() {

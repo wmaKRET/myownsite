@@ -1,20 +1,19 @@
-//$black: #141414;
-
-
+// colours
 $white: #ffffff;
 $grey: rgb(213, 235, 243);
 $darkgrey: rgb(48, 48, 53);
 $black: #141414;
-$navbar: $darkgrey;
-//$black: $darkgrey;
 $orange: rgb(206, 82, 51);
-//$navbar: gray;
 
+$navbar: $darkgrey;
+
+// fonts
 $font-ss: 0.6rem;
 $font-sm: 1rem;
 $font-md: 1.5rem;
 $font-lg: 2rem;
 
+// gradient borders etc
 .gradient-background {
     background-color: $grey;
     background-image: linear-gradient(to right,  $grey 30%, $orange 70%);
