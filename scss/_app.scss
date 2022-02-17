@@ -43,18 +43,17 @@
         font-size: $font-ss;
     }
     
-    .month__card { 
-        cursor: pointer;
-    }
-
     .month__card--add {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         border-width: 5px;
         border-style: solid;
         border-image: linear-gradient(to bottom,  $darkgrey, $grey, $darkgrey) 1 100%;
         border-radius: 5px;
+    }
+
+    .month__card, .month__card--add {
+        width: max-content;
+        margin: auto;
+        padding: 1rem 1rem;
         cursor: pointer;
     }
 
@@ -285,12 +284,6 @@
     .app__monthly--items {
         display: flex;
         flex-direction: column;
-
-        .month__card, .month__card--add {
-            padding: 1rem;
-            margin: 0.5rem 2rem;
-            height: auto;
-        }
     }
 
     .form__monthadd { // [ ADDING MONTH FORM ]
@@ -364,12 +357,6 @@
     .app__monthly--items {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
-        .month__card, .month__card--add {
-            padding: 1rem;
-            margin: 0.5rem 2rem;
-            height: auto;
-        }
     }
 }
 
@@ -411,12 +398,6 @@
     .app__monthly--items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-
-        .month__card, .month__card--add {
-            padding: 1rem;
-            margin: 0.5rem 2rem;
-            height: auto;
-        }
     }
 }
 
@@ -458,11 +439,5 @@
     .app__monthly--items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-        .month__card, .month__card--add {
-            padding: 1rem;
-            margin: 0.5rem 2rem;
-            height: auto;
-        }
     }
 }

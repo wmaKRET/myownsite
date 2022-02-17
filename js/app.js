@@ -127,13 +127,13 @@ function formDefault(){
 }
 
 // BOTTOM SECTION FUNCTIONS
-const openMonth = (background, inside, outside) => {
+function openMonth(background, inside, outside) {
     background.classList.add('active');
     inside.classList.add('active');
     outside.classList.add('active');
 }
 
-const closeMonth = (background, inside, outside) => {
+function closeMonth(background, inside, outside) {
     background.classList.remove('active');
     inside.classList.remove('active');
     outside.classList.remove('active');

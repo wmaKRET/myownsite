@@ -65,7 +65,7 @@
         }
     }
 
-    .navbar__escape--mobile { // [ space except mobile menu]
+    .navbar__escape--mobile { // [ space beneath mobile pop-up menu ]
         visibility: hidden;
         opacity: 0;
 
@@ -127,7 +127,7 @@
 
         &.active {
 
-            .hbg-line { // hamburger transition to X
+            .hbg-line { // [ hamburger transition to X ]
 
                 &:nth-child(1) {
                     transform-origin: center;
@@ -163,7 +163,6 @@
                 color: $white;
             }
         }
-
         
         .highlight { // [ highlight proper menu section ] 
             transition: all 0.1s ease-in-out;
@@ -176,16 +175,27 @@
             -webkit-text-fill-color: transparent;
             -moz-text-fill-color: transparent;
             border-bottom: 4px solid $grey;
+
+            &-app {
+                transition: all 0.1s ease-in-out;
+                background-color: $orange;
+                background-image: linear-gradient(to top, $orange 30%, $darkgrey);
+                background-size: 100%;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+                border-bottom: 4px solid $orange;   
+            }
         }
     }
 
     .navbar__mobile--container {
         visibility: hidden;
-
     }
 
     .navbar__hbg {
         visibility: hidden;
-
     }
 }

@@ -4,7 +4,7 @@
 @import "footer";
 @import "app";
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,8 +15,6 @@
 body {
     background-color: $darkgrey;
     color: $grey;
-    margin: 0;
-    padding: 0;
 }
 
 a {

@@ -1,28 +1,144 @@
-.main__container {  
+.main {  
+    display: flex;
+    flex-direction: column;
     text-align: center;
 
-    .hero {
+    &__item {
         height: 90vh;
+
+        .form-alert {
+            visibility: hidden;
+
+            padding-bottom: 5px;
+
+            &-success {
+                visibility: visible;
+
+                color: $green;
+            }
+
+            &-failture {
+                visibility: visible;
+                
+                color: $red;
+            }
+        }
+
+        h5 {
+            color: $orange;
+        }
     
         &__heading {
             padding-top: 60px;
         }
-    }
-    
-    .about {
-        height: 90vh;
-    
-        &__heading {
-            padding-top: 60px;
+
+        &__description {
+            padding-top: 30px;
         }
-    }
-    
-    .contact {
-        height: 90vh;
-    
-        &__heading {
-            padding-top: 60px;
+
+        &__form-box {
+            display: flex;
+            flex-direction: column;
+
+            .form-box {
+
+                &__item {
+                    height: 3rem;
+                    margin-bottom: 1rem;
+                    background-color: $darkgrey;
+                    color: $grey;
+                    text-align: center;
+                    font-size: $font-sm;
+                }
+
+                &__textarea {
+                    height: 20rem;
+                    resize: none;
+                    font-size: $font-md;
+                }
+
+                &__btn {
+                    width: max-content;
+                    margin: auto;
+                    padding: 0 1rem;
+                    background: none;
+                    color: $grey;
+                    font-size: $font-md;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
 
+@media screen and (max-width: 450px) {
+
+    .main {
+        &__item {
+
+            &__description {
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+            }
+
+            &__form-box {
+                padding-left: 2.5rem;
+                padding-right: 2.5rem; 
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 767px) {
+
+    .main {
+        &__item {
+
+            &__description {
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+
+            &__form-box {
+                padding-left: 5rem;
+                padding-right: 5rem; 
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .main {
+        &__item {
+
+            &__description {
+                padding-left: 10rem;
+                padding-right: 10rem;
+            }
+
+            &__form-box {
+                padding-left: 10rem;
+                padding-right: 10rem; 
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .main {
+        &__item {
+
+            &__description {
+                padding-left: 20rem;
+                padding-right: 20rem;
+            }
+
+            &__form-box {
+                padding-left: 20rem;
+                padding-right: 20rem; 
+            }
+        }
+    }
+}

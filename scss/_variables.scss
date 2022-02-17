@@ -4,6 +4,9 @@ $grey: rgb(213, 235, 243);
 $darkgrey: rgb(48, 48, 53);
 $black: #141414;
 $orange: rgb(206, 82, 51);
+$green: rgb(81, 226, 81);
+$red: rgb(221, 67, 67);
+
 
 $navbar: $darkgrey;
 
@@ -51,5 +54,12 @@ $font-lg: 2rem;
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(to bottom,  $darkgrey, $orange, $darkgrey) 1 100%;
-    border-radius: 5px;
+    
+}
+
+.gradient-border-contact-form {
+    background-color: $grey;
+    background-image: linear-gradient(to right,  $darkgrey, $orange);
+    border-radius: 3px;
+    border: solid $orange;
 }
