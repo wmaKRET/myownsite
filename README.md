@@ -1,5 +1,7 @@
 # ŻURNAL - basic running journal
 
+## Currently I dropped updating this project - I plan to redo the journal in June
+
 ## General info
 ### The whole project is for learning purposes only. 
 At the start of 2022 I decided to start my journey in web development. Because of that I needed some space to practice my coding in "more advanced" enviroment.
